@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+min-width: 30rem;
+}
+
+#current-tab-name {
+font-weight: bold;
+}
+
+table {
+width: 100%;
+}
+
+.numeric {
+text-align: right;
+}
+</style>
+</head>
+<body>
+<h1>Sleep Timer</h1>
+<label for="close-in-minutes-select">
+
+Close
+<span id="current-tab-name"></span>
+in:
+
+</label>
+<select id="close-in-minutes-select" class="close-in-minutes">
+<option value="1">1 min</option>
+<option value="5">5 min</option>
+<option value="10">10 min</option>
+<option value="15">15 min</option>
+<option value="30">30 min</option>
+<option value="45">45 min</option>
+<option value="60">60 min</option>
+<option value="90">90 min</option>
+<option value="120">120 min</option>
+</select>
+
+<button id="save-timer">Save</button>
+
+<table class="timers">
+<thead>
+<tr>
+<th>Tab</th>
+<th>Sleep In</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script src="/promisify-chrome-funcs.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

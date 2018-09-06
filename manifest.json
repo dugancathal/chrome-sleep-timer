@@ -1,0 +1,13 @@
+{
+  "name": "Chrome Sleep Timer",
+  "version": "1.0",
+  "description": "Put tabs to sleep after an amount of time",
+  "permissions": ["storage", "alarms", "tabs"],
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["promisify-chrome-funcs.js", "background.js"]
+  },
+  "manifest_version": 2
+}
